@@ -1,5 +1,6 @@
 {
     "database": "nodejs",
     "username": "root",
-    "password": "abrah"
+    "password": "abrah",
+    "secret_key": "zero0000"
 }
