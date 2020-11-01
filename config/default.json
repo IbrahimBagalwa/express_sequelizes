@@ -1,5 +1,5 @@
-// {
-//     "database": ,
-//     "username",
-//     "password"
-// }
+{
+    "database": "nodejs",
+    "username": "root",
+    "password": "abrah"
+}

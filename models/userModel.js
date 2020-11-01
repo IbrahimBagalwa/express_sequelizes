@@ -5,20 +5,23 @@ const { Sequelize } = require('sequelize');
 
 // creation du modele users
 const User = db.define('users', {
-    nom: {
-        type: Sequelize.STRING
+        nom: {
+            type: Sequelize.STRING
+        },
+        postnom: {
+            type: Sequelize.STRING
+        },
+        email: {
+            type: Sequelize.STRING
+        },
+        password: {
+            type: Sequelize.STRING
+        }
     },
-    postnom: {
-        type: Sequelize.STRING
-    },
-    email: {
-        type: Sequelize.STRING
-    },
-    password: {
-        type: Sequelize.STRING
-    }
-}, {
-    timestamps = false
-});
+    // {
+    //     // si une fois la table auto add d'autres champs on utilise le timestamps false parce que par default il a toujours ete true
+    //     timestamps = false
+    // }
+);
 
-module.exports = user;
+module.exports = User;
