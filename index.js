@@ -8,8 +8,10 @@ db.authenticate()
     .catch(error => console.log(error));
 
 
-app.use(express.json)
+app.use(express.json())
 app.use('/api/user', require('./routes/user'));
+app.use('/api/auth', require('./routes/authentification'));
+app.use('/api/items', require('./routes/item'))
 
 
 const port = process.env.PORT || 4000
